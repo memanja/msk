@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manoj Shetty Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+        <style>
+            .lander-page {
+                width: 100%;
+                height: 50vh;
+                background-color: #020412;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .typing {
+                color: #bb3a30;
+            }
+
+            .content {
+                margin-right: 500px;
+            }
+
+            .about-me {
+                width: 100%;
+                height: 50vh;
+                background-color: #bb3a30;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .about-me h1 {
+                margin-top: 0;
+                margin-left: 5%;
+            }
+
+            .self-photo {
+    position: fixed;
+    top: 42%;
+    left: 75%;
+    transform: translateY(-50%);
+}
+            h1 {
+                color: floralwhite;
+                font-size: 75px;
+            }
+
+            .details {
+                color: #020412;
+                font-size: 35px;
+                margin-left: 5%;
+            }
+
+            .download-button {
+                display: inline-block;
+                border-radius: 10px;
+                padding: 50px 60px;
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border-radius: 10px;
+                text-decoration: double;
+                margin-left: 10px;
+                margin-top: -20px;
+                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            }
+
+            .download-button:hover {
+                background-color: #bb3a30;
+                color: rgb(0, 0, 0);
+            }
+
+            .download-button:hover {
+                animation: buttonPulse 0.3s infinite alternate;
+            }
+
+            @keyframes buttonPulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                100% {
+                    transform: scale(1.05);
+                }
+            }
+
+            .work-container {
+                text-align: center;
+                margin-top: 60px;
+                margin-left: 50px;
+            }
+
+            .future-dev {
+                font-size: 24px;
+                color: #bb3a30;
+                float: left;
+                margin-left: -3%;
+            }
+
+            .coffee-counter {
+                background-color: #a9443d;
+                color: white;
+                border-radius: 10px;
+                padding: 20px 30px;
+                margin-top: 40px;
+                margin-left: 50px;
+                left: 45%;
+            }
+
+            .counter {
+                font-size: 36px;
+                font-weight: bold;
+                align-items: center;
+                right: 50%;
+                margin-left: 30%;
+                animation: countup 5s steps(254) forwards;
+            }
+
+            .coffee-label {
+                font-size: 15px;
+                margin-top: 5px;
+                align-items: center;
+            }
+
+            @keyframes countup {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            .contact-section {
+                text-decoration: double;
+                text-align: center;
+                padding: 50px 0;
+                background-color: #000;
+            }
+
+            .contact-section h1 {
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+
+            .contact-section p {
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 30px;
+            }
+
+            .contact-details {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .contact-item {
+                margin: 0 20px;
+                text-decoration: none;
+                color: white;
+            }
+            .contact-item a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .contact-item i {
+                font-size: 24px;
+                margin-right: 5px;
+            }
+
+            .contact-item span {
+                font-size: 16px;
+                vertical-align: middle;
+            }
+
+            .social-links p {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: center;
+            }
+
+            .social-icon {
+                display: inline-block;
+                margin: 0 10px;
+                font-size: 24px;
+                color: #666;
+            }
+
+            .social-icon:hover {
+                color: #bb3a30;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: -2%;
+            }
+
+            .coffee-counter,
+            .work-container {
+                margin: px;
+            }
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+        <section class="lander-page">
+            <div>
+                <h1 class="content">I'm <span class="typing"></span></h1>
+                <img class="self-photo" src="bg_1.png" alt="Your Photo" />
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".typing", {
+                strings: ["Manoj Shetty K", "a Programmer", "a Developer", "an Engineer", "an Artist", "a Photographer", "a Writer"],
+                typeSpeed: 25,
+                backSpeed: 25,
+                loop: true,
+            });
+        </script>
+
+        <section class="about-me">
+            <h1>A Senior Software Engineer</h1>
+            <div class="details">
+                Senior Software Engineer with over 2.8 years in the industry.<br />
+                Proficient in developing software solutions to boost efficiency and productivity.<br />
+                Recognized for adept problem-solving and creating fresh solutions.<br />
+                Excellent at communication and teamwork, adept at collaborating with diverse teams. <br />
+                Committed to delivering high-caliber code and surpassing client needs.
+            </div>
+            <br />
+        </section>
+
+        <section class="container">
+            <div class="coffee-counter">
+                <div class="counter" data-val="256" id="coffeeCounter">0</div>
+                <p class="coffee-label">Coffee Consumption During Development</p>
+            </div>
+            <div class="work-container">
+                <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+                <p class="future-dev"><i class="fas fa-exclamation-triangle"></i>Trust me, I am still developing this But, You can download my CV here <i href="Manoj Shetty K _CV.pdf" download style='font-size:50px' class='fas'>&#xf103;</i></p>
+                <br>
+                <a href="Manoj Shetty K _CV.pdf" download class="download-button">Download <b>CV</b></a>
+            </div>
+            <script>
+                let valueDisplays = document.querySelectorAll(".counter");
+                let interval = 4000;
+                valueDisplays.forEach((valueDisplay) => {
+                    let startValue = 0;
+                    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                    let duration = Math.floor(interval / endValue);
+                    let counter = setInterval(function () {
+                        startValue += 1;
+                        valueDisplay.textContent = startValue;
+                        if (startValue == endValue) {
+                            clearInterval(counter);
+                        }
+                    }, duration);
+                });
+            </script>
+        </section>
+
+        <br />
+
+        <section class="contact-section">
+            <h1 class="contact">Contact Me</h1>
+            <p>Let us keep in touch</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span><a href="tel://9945602434">+91 9945602434</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="far fa-envelope"></i>
+                    <span><a href="mailto:info@yoursite.com">shettykmanojmask@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-home"></i>
+                    <span>Puttur, India</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="social-icons">
+                    <p class="social-icon">Find me on:</p>
+
+                    <a href="https://facebook.com/manoj.manju.775" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/manojshettyk" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/manojshettyk" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/manojshettyk-profile/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://medium.com/@shettykmanojmask" class="social-icon"><i class="fab fa-medium"></i></a>
+
+                    <!-- Add more social media icons and links as needed -->
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
